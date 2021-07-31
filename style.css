@@ -1,0 +1,180 @@
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+    }
+    /*background and scroll bar*/
+
+    #wrapper {
+        height: auto;
+        width: 100%;
+        background: url(https://images.unsplash.com/photo-1558478551-be297c7bb253?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDUyfGFldTZyTC1qNmV3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        }
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+    ::-webkit-scrollbar-track {
+        border: 20px solid rgb(172, 171, 171);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: lightgrey;
+        border-radius: 5px;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+    /*Title and description*/
+    #title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 200;
+        padding-top: 30px;
+        }
+    #description {
+        padding: 0%;
+        text-align: center;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 200;
+        }
+    /*Form*/
+    #survey-form {
+        width: 60%;
+        height: auto;
+        background-color: grey;
+        text-align: left;
+        font-size: 25px;
+        font-weight: 200;
+        font-style:oblique;
+        padding-bottom: 40px;
+        margin: auto;
+        margin-bottom: 3%;
+        position: relative;
+        }
+    p {
+        padding:0% 0% 0% 10%;
+        margin-bottom: 0%;
+        }
+    /*Name, email y age*/
+
+    #name-label, #email-label, #number-label {
+        display: block;
+        padding-left: 5%;
+        padding-top:2.2%;
+        padding-bottom:2.2%;
+        width: 80%;
+        height: auto;
+        margin-left: 5%;
+        margin-top: 10px;
+        }
+        #name-label {
+        margin-top: 30px;
+        padding-top: 5%
+        }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        background-color:white;
+        height: 50px;
+        width: 80%;
+        margin-left: 10%;
+        }
+    /*Select options*/
+    #dropdown {
+        width: 80%;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 10%;
+        }
+    /*Radio buttons*/
+    .container {
+        font-size: 20px;
+        width: 100%;
+        margin-top: 30px;
+        margin-left:10%;
+        display:block;
+        }
+    #improvements{
+        height:20px;
+        margin:0px;
+        padding:0px;
+        }
+    #textarea {
+        height: 100px;
+        width:80%;
+        margin-top: 30px;
+        margin-left: 10%;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        }
+    button[type="submit"] {
+        background-color: rgb(50, 116, 116);
+        width: 80%;
+        height: 60px;
+        cursor: pointer;
+        margin-left: 10%;
+        padding: 15px;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        border: 0;
+        color: white;
+        }
+        @media only screen and (min-width: 1500px){
+
+        #survey-form {
+        width: 40%;
+        margin: auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+        width: 80%;
+        margin-left: 10%;
+        }
+    }
+    @media only screen and (max-width: 1499px){
+
+        #survey-form {
+        width: 60%;
+        margin: auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+        width: 80%;
+        margin-left: 10%;
+        }
+    }
+    @media only screen and (max-width: 1000px){
+        #survey-form {
+        width: 80%;
+        margin: auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+        width: 80%;
+        margin-left: 10%;
+        }
+    }
+    @media only screen and (max-width: 600px){
+
+        #survey-form {
+        width: 100%;
+        margin: auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+        width: 80%;
+        margin-left: 10%;
+        }
+    }
